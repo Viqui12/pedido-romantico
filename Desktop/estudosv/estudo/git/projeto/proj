@@ -1,8 +1,4 @@
-git clone git@github.com:campinho-digital/webfrontend-2024-2-semana-git-e-github-extra.git
-git branch <alterações>
-git checkout -b minha alteração
-git add .
-git commit -m "Segunda alteração no outro arquivo"
+git checkout -b minha-feature
 
 
 
