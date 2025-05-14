@@ -1,4 +1,5 @@
 git checkout -b minha-feature
+git commit -m "Terceira alteração no terceiro arquivo"
 
 
 
