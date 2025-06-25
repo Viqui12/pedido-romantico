@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+
+  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Namora comigo</title>
+</head>
+<body>
+  <div class="conteudo">
+    <h2>💖 Aceita namorar comigo? 💖</h2>
+    <button onclick ="Sim()">Sim</button>
+    <button id="nao"onmouseover = "desvia()">Não</button>
+    
+  </div>
+  <script>
+    
+    function Sim() {
+    alert ("Você aceitou namorar comigo! 💕");
+  }
+
+  function desvia() {
+   var btn = document.getElementById("nao");
+    console.log(btn);
+    console.log("Opa, desviei kkkk ....");
+
+    // Faz o botão "Não" pular de lugar
+    const largura = window.innerWidth - btn.offsetWidth;
+    const altura = window.innerHeight - btn.offsetHeight;
+    const novaEsquerda = Math.floor(Math.random() * largura);
+    const novoTopo = Math.floor(Math.random() * altura);
+
+    btn.style.position = "absolute";
+    btn.style.left = novaEsquerda + "px";
+    btn.style.top = novoTopo + "px";
+  }
+  </script>
+
+  
+</body>
+</html>
+
